@@ -1,0 +1,24 @@
+<div class="container">
+    <h2>Votre Panier</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Produit</th>
+          <th>Prix</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of cart; let i = index">
+          <td>{{ product.name }}</td>
+          <td>{{ product.price | currency:'EUR' }}</td>
+          <td>
+            <button class="btn btn-danger btn-sm" (click)="removeFromCart(i)">Retirer</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h4>Total : {{ totalPrice | currency:'EUR' }}</h4>
+    <a routerLink="/" class="btn btn-primary mt-3">Retourner aux produits</a>
+  </div>
+  

@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4" *ngFor="let product of products">
+        <div class="card w-100 m-2">
+          <img [src]="product.image" class="card-img-top  size" alt="{{ product.name }}">
+          <div class="card-body">
+            <h5 class="card-title">{{ product.name }}</h5>
+            <p class="card-text">{{ product.price | currency:'EUR' }}</p>
+            <button class="btn  btn-secondary mt-3 " (click)="addToCart(product)">Ajouter au panier</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <a routerLink="/cart" class="btn btn-secondary mt-3">Voir le panier</a>
+  </div>
+
+
+  

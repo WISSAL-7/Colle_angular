@@ -1,0 +1,69 @@
+/* Style général de la navbar */
+.navbar {
+  background: linear-gradient(135deg, #6a4c9c, #9b59b6); /* Dégradé violet */
+  padding: 15px 20px;
+  border-radius: 0 0 20px 20px;
+}
+
+/* Style du logo (navbar-brand) */
+.navbar-brand {
+  font-size: 1.75rem;
+  color: #fff; /* Couleur du texte en blanc */
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #f1c40f; /* Change la couleur du logo au survol */
+}
+
+/* Style de la liste de liens */
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+/* Style des éléments de la liste (li) */
+.nav-item {
+  margin-right: 25px; /* Espacement entre les éléments */
+}
+
+/* Style des liens de la navbar */
+.nav-link {
+  color: #fff; /* Couleur des liens */
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #f1c40f; /* Couleur au survol */
+  transform: scale(1.1); /* Effet d'agrandissement au survol */
+}
+
+/* Lien actif de la navbar */
+.nav-link.active {
+  color: #f1c40f; /* Couleur dorée pour le lien actif */
+  border-bottom: 2px solid #f1c40f; /* Soulignement doré */
+}
+
+/* Adapter la navbar aux petits écrans */
+@media (max-width: 768px) {
+  .navbar-collapse {
+    text-align: center;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+  }
+
+  .nav-item {
+    margin-bottom: 15px; /* Espacement vertical sur petits écrans */
+  }
+}

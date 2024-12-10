@@ -1,0 +1,90 @@
+/* Conteneur général du panier */
+.container {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  /* Titre du panier */
+  h2 {
+    color: #6a4c9c; /* Violet foncé pour le titre */
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  /* Style de la table */
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .table th, .table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.1rem;
+  }
+  
+  /* Style des entêtes de la table */
+  .table th {
+    background-color: #9b59b6; /* Violet clair pour l'entête */
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  /* Style des cellules de la table */
+  .table td {
+    background-color: #fff;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  /* Style du bouton Retirer */
+  .btn-danger {
+    background-color: #e74c3c; /* Rouge vif pour le bouton "Retirer" */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-danger:hover {
+    background-color: #c0392b; /* Couleur plus sombre au survol */
+  }
+  
+  /* Total de la commande */
+  h4 {
+    text-align: right;
+    color: #9b59b6; /* Violet clair pour le total */
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+  
+  /* Bouton Retourner aux produits */
+  .btn-primary {
+    background-color: #6a4c9c; /* Violet pour le bouton principal */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #5e3c8b; /* Violet plus foncé au survol */
+  }
+  
+  /* Effet de survol pour les lignes de la table */
+  .table tbody tr:hover {
+    background-color: #f1f1f1; /* Gris clair au survol des lignes */
+    cursor: pointer;
+  }
+  

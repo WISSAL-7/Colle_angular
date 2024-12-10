@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    background-image: linear-gradient(to right,rgb(223, 151, 223),white);
+}
+/* Footer général */
+.footer {
+    background-color: #6a4c9c; /* Violet foncé */
+    color: white;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  .footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Pour un meilleur espacement sur mobile */
+  @media (max-width: 576px) {
+    .footer p {
+      font-size: 0.9rem;
+    }
+  }
+  
